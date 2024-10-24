@@ -1,0 +1,16 @@
+  331  exit
+  332  git clone https://github.com/SvetPl/Homework_12-.git
+  333  cd Homework_12-
+  334  git checkout -b feature
+  335  git checkout -b feature
+  336  git checkout feature
+  337  echo "*.log" >> .gitignore
+  338  echo "# Это новый README файл" > README.md
+  339  git add README.md .gitignore\n
+  340  git commit -m "Изменения в README.md и .gitignore"
+  341  git push origin feature
+  342  git commit --amend -m "Изменения в README.md и .gitignore ammend"
+  343  git push --force origin feature
+  344  git checkout main
+  345  git merge feature
+  346  git push origin main
